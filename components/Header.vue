@@ -7,7 +7,7 @@
       <nav v-if="headerMenu">
         <ul class="flex gap-6 md:gap-10 text-stone-700 font-semibold">
           <li v-for="menuLink in headerMenu" :key="menuLink._uid">
-            <NuxtLink :to="`/${menuLink.link.cached_url}`" class="capitalize hover:text-pink-400">
+            <NuxtLink :to="`/${menuLink.link.cached_url}/`" class="capitalize hover:text-pink-400">
               {{ menuLink.link.story.name }}
             </NuxtLink>
           </li>
