@@ -7,7 +7,7 @@
       <nav>
         <ul class="flex gap-6 md:gap-10 text-stone-700 font-semibold">
           <li v-for="link in ['blog', 'about']">
-            <NuxtLink :to="`/${link}`" class="capitalize hover:text-pink-400">{{ link }}</NuxtLink>
+            <NuxtLink :to="`/${link}/`" class="capitalize hover:text-pink-400">{{ link }}</NuxtLink>
           </li>
         </ul>
       </nav>
