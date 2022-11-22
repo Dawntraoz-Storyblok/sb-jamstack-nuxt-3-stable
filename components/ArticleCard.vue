@@ -8,7 +8,7 @@
     <p class="text-sm text-stone-600 pt-1">
       {{ article.teaser }}
     </p>
-    <NuxtLink :to="`/${slug}/`" class="block text-right text-pink-400 text-sm underline pt-2">Read more</NuxtLink>
+    <NuxtLink :to="`/${slug}${slug.slice(-1) !== '/' ? '/' : ''}`" class="block text-right text-pink-400 text-sm underline pt-2">Read more</NuxtLink>
   </article>
 </template>
 
