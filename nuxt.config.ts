@@ -9,4 +9,7 @@ export default defineNuxtConfig({
     ],
 	  '@nuxtjs/tailwindcss'
   ],
+  experimental: {
+    payloadExtraction: false
+  }
 })
